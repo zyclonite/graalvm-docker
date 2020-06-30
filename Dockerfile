@@ -17,7 +17,7 @@ ENV JAVA_HOME /usr/java/openjdk-14
 ENV PATH $JAVA_HOME/bin:$PATH
 ENV JAVA_VERSION 14
 
-COPY --from=builder /graal/sdk/mxbuild/linux-amd64/GRAALVM_UNKNOWN_JAVA14/graalvm-unknown-java14-20.1.0 /usr/java/openjdk-14
+COPY --from=builder /graal/sdk/mxbuild/linux-amd64/GRAALVM_3398AB5293_JAVA14/graalvm-3398ab5293-java14-20.1.0 /usr/java/openjdk-14
 
 RUN set -eux; \
   	apt-get update; \
